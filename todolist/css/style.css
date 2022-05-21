@@ -226,12 +226,8 @@ ul.todo {
   list-style: none;
   
 }
-/* ul.todo li {
-  
-} */
-.test {
+.task {
   display: flex;
-  align-items: center;
   justify-content: space-between;
   width: 100%;
   min-height: 30px;
@@ -245,19 +241,24 @@ ul.todo {
   padding: 0 10px; 
   word-break: break-word;
 }
-.todo-item {
+ul.todo li {
   flex: 1;
 }
-.trash-btn , .complete-btn {
+
+.task button  {
+  border: none;
+  background-color: #fff;
+}
+.task button i {
   margin-left: 5px;
   border-radius: 100%;
   padding: 2px;
-  color: #aaa;
-  border: none;
+  color: #aaa;;
 }
-.fa-trash, .fa-check {
-  pointer-events: none;
+.task .fa-check {
+  border: 1px solid #aaa;
 }
+
 
 ul.todo#todo{
   padding-top: 30px;
@@ -345,4 +346,9 @@ ul.todo#completed li .buttons .complete .far{
 ul.todo#completed span{
   color: #25b99a;
 }
-
+.complete{
+  color: #25b99a !important;
+}
+.fas{
+  cursor: pointer;
+}
